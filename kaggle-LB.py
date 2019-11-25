@@ -64,7 +64,7 @@ def send_email(credentials):
     message = f"""\
     Hi there,
 
-    The lyft leaderboard is finalized, checkitout <a href="{URL}"> here</a>: """
+    THE LEADERBOARD HAS BEEN FINALIZED!, check it out: {URL}"""
 
     context = ssl.create_default_context()
     with smtplib.SMTP(smtp_server, port) as server:
@@ -103,13 +103,4 @@ if __name__ == "__main__":
         print(f'{clock} | Still not finalized :(')
         time.sleep(interval * 60)
 
-
-
-'''
-To enable SMTP feature of gmail, follow the guidelines:
-
-https://help.dreamhost.com/hc/en-us/articles/115001719551-Troubleshooting-GMAIL-SMTP-authentication-errors
-
-NOTE: it may take some time to reflect the changes.
-
-'''
+        
