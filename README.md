@@ -21,8 +21,11 @@ After enabling gmail SMTP functionality, install `requests` with `pip install re
 * Get [termux-version.py](termux-version.py) on your phone, open it with Termux, you'll find the file available in termux terminal's `download` directory. Make sure you've added your email credentials in the script and activated Gmail SMTP functionality as mentioned above.
 * Run the script with `python termux-version.py`.
 
-The notifcations looks like this:
+## Screenshots
+
 <p float="left">
+  <img src="screenshots/running.jpeg" alt="termux" width="30%" height="30%" />
+  ----
   <img src="screenshots/termux.jpeg" alt="termux" width="30%" height="30%" />
   ----
   <img src="screenshots/email.jpeg" alt="email" width="30%" height="30%" />  
