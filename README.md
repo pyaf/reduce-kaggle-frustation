@@ -15,11 +15,15 @@ After enabling gmail SMTP functionality, install `requests` with `pip install re
 
 ## How to get it running on Android:
 
-* Install Termux and Termux:API apps from play store
+* Install `Termux` and `Termux:API` apps from play store.
 * Install `python` and `termux-api` with `pkg install python` and `pkg install termux-api`.
-* Install `requests` with `pip install requests`
+* Install `requests` with `pip install requests`.
 * Get [termux-version.py](termux-version.py) on your phone, open it with Termux, you'll find the file available in termux terminal's `download` directory. Make sure you've added your email credentials in the script and activated Gmail SMTP functionality as mentioned above.
-* run the script with `python termux-version.py`
+* Run the script with `python termux-version.py`.
 
-The notifcation looks like this:
-
+The notifcations looks like this:
+<p float="left">
+  <img src="screenshots/termux.jpeg" alt="termux" width="30%" height="30%" />
+  ----
+  <img src="screenshots/email.jpeg" alt="email" width="30%" height="30%" />  
+</p>
