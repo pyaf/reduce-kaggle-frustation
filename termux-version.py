@@ -62,7 +62,7 @@ def send_email(credentials):
     receiver_email = credentials["receiver_email"]
 
     SUBJECT = "Kaggle's Lyft Competition"
-    TEXT = f"Hi there! \n\nTHE LEADERBOARD HAS BEEN FINALIZED! \ncheck it out: {URL}"
+    TEXT = f"Hi there! \n\nTHE LEADERBOARD HAS BEEN FINALIZED!, check it out: {URL}"
     message = "Subject: {}\n\n{}".format(SUBJECT, TEXT)
 
     context = ssl.create_default_context()
@@ -88,7 +88,7 @@ if __name__ == "__main__":
         if status:
             print(message)
             # send system notification
-            subprocess.Popen(["notify-send", message])
+            subprocess.Popen(["termux-notification", "-c", message])
             # send email
             send_email(credentials)
             break
